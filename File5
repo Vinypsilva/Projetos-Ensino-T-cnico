@@ -1,0 +1,24 @@
+salario = float(input("Digite o seu salario"))
+
+if salario <= 280:
+    percentual = "20%"
+    reajuste = salario*0.20
+    salario_total = reajuste + salario
+elif salario > 280 and salario < 700:
+    percentual = "15%"
+    reajuste = salario*0.15
+    salario_total = reajuste + salario
+elif salario > 700 and salario < 1500:
+    percentual = "10%"
+    reajuste = salario*0.10
+    salario_total = reajuste + salario
+elif salario >= 1500:
+    percentual = "5%"
+    reajuste = salario*0.05
+    salario_total = reajuste + salario
+else:
+    print("Digite numero válido")
+    
+print("O percentual é:",percentual)
+print("O reajuste é:",reajuste)
+print("O salario_total é:",salario_total)
