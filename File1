@@ -1,0 +1,17 @@
+a = 0
+somatotal = 0
+
+while a>=0:
+    
+    n = int(input(("Digite um numero:(999 para parar)")))
+    parar = int(input(("Digite 999 para parar")))
+    
+    a = a + 1
+    somatotal = somatotal + n
+
+    if parar == 999:
+         print("Terminou")
+         break
+    
+print("Numeros digitados",a)
+print("Soma total",somatotal)
