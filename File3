@@ -1,0 +1,31 @@
+a = 0
+count = 0
+soma18 = 0
+somam = 0
+somah = 0
+
+
+while a>=-1:
+    count = 0
+    idade = int(input("Digite a sua idade:"))
+    genero = str(input("Digite seu genero:(h ou m)"))
+    continuar = str(input("Deseja continuar?:"))
+   
+    if idade >= 18:
+      soma18 = soma18 + 1
+      
+
+    if genero == 'm' and idade <= 18:
+      somam = somam + 1
+      
+    if genero == "h":
+       somah = somah + 1
+
+    if continuar == "n":
+        break
+
+print("A soma de maiores de 18 é:",soma18)
+print("A soma das mulheres menores de 18 é:",somam)
+print("A soma dos homens é:",somah)
+
+
