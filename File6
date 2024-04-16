@@ -1,0 +1,5 @@
+letra = str(input("Digite uma string"))
+
+string_invertida = letra[::-1]
+
+print("String invertida",string_invertida)
