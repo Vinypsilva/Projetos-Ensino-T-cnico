@@ -1,0 +1,23 @@
+nome = str(input("Digite o nome"))
+idade = int(input("Digite a idade"))
+salario = float(input("Digite o salario"))
+sexo = str(input("Digite o genero"))
+
+if  len(nome) >= 3:
+    print("Maior que 3 caracteres")      
+else:
+    print("Alguma condição não foi atendida")
+if idade <= 150 and idade > 0:
+    print("Idade entre 0 e 150")
+else:
+    print("Alguma condição não foi atendida")
+if salario > 0:
+    print("Salario maior que zero")
+else:
+    print("Alguma condição não foi atendida")    
+if sexo == "f":
+    print("Sexo feminino")
+elif sexo == "m":
+    print("Sexo masculino")
+else:
+    print("Alguma condição não foi atendida")
