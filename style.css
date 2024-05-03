@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(9, 97, 9);
+}
+div{
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+    border-radius: 15px;
+    border-style: solid;
+}
+input{
+    border: 5px medium black;
+    border-radius: 5px;
+    border-style:solid;
+}
