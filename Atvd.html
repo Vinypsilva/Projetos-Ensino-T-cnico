@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">ATIVIDADE</title>
+</head>
+
+<body>
+    <script>
+        var reverse = true;
+        function Funcao1() {
+            var a = document.getElementById("btnLogin1").value;
+            document.body.style.background = "Yellow";
+        }
+    </script>
+
+    <p><button class="borda5" type="submit" id="btnLogin1" onclick="Funcao1()">Trocar cor</p>
+
+
+    <script>
+        var reverse = true;
+        function Funcao2() {
+            var a2 = document.getElementById("btnLogin2").value;
+            document.getElementById("titulo").innerHTML = "Hoje é segunda";
+        }
+
+    </script>
+
+    <p><button class="borda5" type="submit" id="btnLogin2" onclick="Funcao2()">Trocar titulo</p>
+
+    <script>
+
+        function Funcao3() {
+            if (reverse) {
+                document.body.style.background = "Blue";
+                document.title = "ATIVIDADE";
+                reverse = false;
+            } else {
+                document.body.style.background = "Yellow";
+                document.title = "Hoje é segunda";
+                reverse = true;
+            }
+
+        }
+    </script>
+    <button class="borda5" type="submit" id="btnLogin3" onclick="Funcao3()">Voltar</button>
+
+    <script>
+        function Funcao4() {
+            var x1 = document.getElementById("myInput1").value;
+            var x2 = document.getElementById("myInput2").value;
+            var x3 = document.getElementById("myInput3").value;
+            document.getElementById("id1").innerHTML = x1;
+            document.getElementById("id2").innerHTML = x2; 
+            document.getElementById("id3").innerHTML = x3;
+       
+            if((x1 == "" || x2 == "" || x3 == "")){
+                alert("Pelomenos 1 é nulo")
+            }
+            if((x1 == x2) && (x2 == x3)){
+                alert("Os textos são iguais")
+            }
+        }
+    </script>
+    <form>
+        <input type="text" id="myInput1"></input>
+        <input type="text" id="myInput2"></input>
+        <input type="text" id="myInput3"></input>
+    </form>
+    <button id="botao4" onclick="Funcao4()">Mostrar</button>
+    
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <script>
+        function divisao(){
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            document.getElementById("resposta").innerHTML = a/b
+        }
+    </script>
+    
+    <div>
+    <input type="text" id="n1"></input>
+    <input type="text" id="n2"></input>
+    </div>
+
+    <button type="button"  onclick="divisao()">Divisao</button>
+    <p id="resposta">a</p>
+</body>
+
+</html>
